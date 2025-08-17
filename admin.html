@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop MM — Admin Orders</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">📦 Orders Admin</div>
+    <a class="btn ghost" href="index.html">← Back to Shop</a>
+  </header>
+
+  <main class="container">
+    <div class="card p-16">
+      <div class="toolbar">
+        <button id="refreshOrders" class="btn">Load Orders</button>
+      </div>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th><th>Phone</th><th>Address</th><th>Payment</th><th>Items</th><th>Total (Ks)</th>
+            </tr>
+          </thead>
+          <tbody id="ordersBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/admin.js"></script>
+</body>
+</html>
